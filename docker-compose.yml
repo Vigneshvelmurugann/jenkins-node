@@ -2,7 +2,7 @@ version: "2.1"
 services:
 
   nodejs:
-    image: sample
+    image: jenkins/sample
     depends_on:
       mysql:
         condition: service_healthy
