@@ -1,0 +1,7 @@
+node {
+    checkout scm
+    docker.withRegistry('https://registry.hub.docker.com', 'vky123') {
+        def customImage = docker.build("sample")
+        customImage.push()
+    }
+}
